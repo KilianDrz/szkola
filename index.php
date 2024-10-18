@@ -17,7 +17,7 @@
             echo '<div style="text-align: center;">';
             echo '<h1>Matematyka</h1>';
             $login = mysqli_connect('localhost', 'root', '', 'szkola');
-            $result = mysqli_query($login, 'SELECT ID, Imie, Nazwisko, Ocena FROM oceny');
+            $result = mysqli_query($login, 'SELECT ID, Imie, Nazwisko, Ocena FROM matematyka');
             echo "<table>";
             echo "<tr>";
             echo "<th>id</th>";
@@ -42,7 +42,7 @@
     <ul>
         <li><a href="index.php">Matematyka</a></li>
         <li><a href="polski.php">J. Polski</a></li>
-        <li>J. Angielski</li>
+        <li><a href="dodaj.php">Dodaj ocenę</a></li>
 
 </nav>
     <footer>
